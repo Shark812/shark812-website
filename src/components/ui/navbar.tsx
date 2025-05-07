@@ -15,7 +15,6 @@ const navItems: NavItem[] = [
   { label: "about", href: "#about" },
   { label: "projects", href: "#projects" },
   { label: "resume", href: "#resume" },
-  { label: "blog", href: "#blog" },
   { label: "connect", href: "#connect" },
 ];
 
@@ -200,10 +199,10 @@ export function FloatingNavbar() {
         <DesktopNav />
 
         {/* Theme toggle */}
-        <ThemeToggle />
+        <ThemeToggle className="mr-8 ml-auto"/>
 
         {/* Mobile hamburger button */}
-        <div className="md:hidden ml-auto h-10 flex items-center justify-center">
+        <div className="md:hidden ml-auto h-10 flex items-center justify-center mr-4">
           <HamburgerButton />
         </div>
 
